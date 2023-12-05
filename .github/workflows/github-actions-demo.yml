@@ -41,6 +41,6 @@ jobs:
       - Explore-GitHub-Actions
     steps:
       - run: echo "🎉 start run job Test-Github-Output"
-      - run: echo "🎉 Output of the previous job ${{ needs.Explore-GitHub-Actions.outputs.tag }}"
+      - run: echo "🎉 Output of the previous job ${{ needs.not-exist.outputs.tag }}"
 
 
